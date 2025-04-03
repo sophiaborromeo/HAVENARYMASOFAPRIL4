@@ -1,0 +1,557 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background: #efdccc; /* Pale Beige */
+    /* background-image: url('https://source.unsplash.com/1600x900/?elegant,texture'); Elegant Background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #311E0F; /* Deep Coffee Brown for text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #2D1300; /* Dark Espresso Brown. This is my header footer color */ 
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.footer {
+    background: #2D1300; /* Dark Espresso Brown */
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Havenarym Title in Navbar */
+.havenarym {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.havenarym a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the same color as its parent */
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    pointer-events: auto; /* Ensures it's clickable */
+}
+
+.havenarym a:hover {
+    color: inherit; /* Prevents color change on hover */
+    cursor: pointer; /* Shows it's clickable */
+}
+
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links a:hover {
+    color: #EAC696; /* Soft Gold Hover */
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #2D1300;  /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding around the footer */
+    font-family: 'Arial', sans-serif;
+    border-top: 1px solid #d5d5d5; /* Optional border for subtle separation */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;  /* Centering the content */
+    padding: 0 20px;  /* Padding on the sides */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+
+
+.front {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 250px 20px;
+    position: relative;
+}
+
+
+.front p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #635342; /* Deep Brown */
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn:hover {
+    background: #6D4E3C; /* Even Darker Brown */
+}
+
+section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Updated Heading & Text Color */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #311E0F; /* Deep Coffee Brown */
+}
+
+p {
+    font-size: 18px;
+    color: #311E0F; /* Deep Coffee Brown */
+}
+
+
+
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #311E0F;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    font-size: 16px;
+    color: #5E3927;
+}
+
+.login-box label {
+    display: block;
+    font-size: 16px;
+    color: #311E0F;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-box .btn {
+    background: #5E3927;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-box .btn:hover {
+    background: #311E0F;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #5E3927;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    color: #311E0F;
+}
+
+
+
+
+
+/* Signup Section */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.signup-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.signup-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #311E0F;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    font-size: 16px;
+    color: #5E3927;
+}
+
+.signup-box label {
+    display: block;
+    font-size: 16px;
+    color: #311E0F;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.signup-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-box .btn {
+    background: #5E3927;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.signup-box .btn:hover {
+    background: #311E0F;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #5E3927;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    color: #311E0F;
+}
+
+
+/* Signup & Login Section Fix */
+.signup-section, .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    background: transparent; 
+}
+
+
+
+
+
+/* Admin Page Layout */
+.admin-container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2D1300; /* Dark brown */
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #5e3927; /* Slightly lighter brown */
+}
+
+/* Main Content */
+.admin-content {
+    margin-left: 260px;
+    padding: 50px;
+    flex-grow: 1;
+}
+
+/* Admin Dashboard Cards */
+.admin-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.card h2 {
+    color: #2D1300;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #5e3927;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background: #311E0F;
+}
+
+
+
+
+
+
+/* Centered Account Section */
+.account-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Tab Buttons */
+.account-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.account-tabs button {
+    background: #2D1300; /* Dark Espresso Brown */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+.account-tabs button:hover {
+    background: #4E2A15; /* Slightly lighter brown */
+}
+
+/* Content Sections */
+.account-content {
+    display: none; /* Hide all sections by default */
+    padding: 20px;
+    background: #f7e6d5; /* Soft Cream */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Show Active Section */
+.active {
+    display: block;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #c7a17a;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #d3b091; /* Elegant Brown */
+    color: white;
+}
+
+td {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .account-section {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .account-tabs {
+        flex-direction: column;
+    }
+    
+    .account-tabs button {
+        margin-bottom: 10px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(196, 189, 189);
+    min-width: 160px;
+    box-shadow: 0px 4px 6px rgba(131, 119, 119, 0.1);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2D1300;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

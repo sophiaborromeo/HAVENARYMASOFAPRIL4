@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Havenarym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="havenarym">
+            <a href="main.php">Havenarym</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="products.php">Products</a></li>
+            <li><a href="aboutus.php">About</a></li>
+            <li><a href="login.php">👩🏻‍🦳</a></li>
+            <li><a href="cart.html" id="cart-btn">🛒</a></li>
+        </ul>
+    </nav>
+    
+    <section class="cart-section">
+        <h2>🛒 Your Shopping Cart</h2>
+
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="images/item1.jpg" alt="Product Image">
+                <div class="cart-details">
+                    <h3>Product Name</h3>
+                    <p>Price: </p>
+                    <p>Quantity: </p>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="images/item2.jpg" alt="Product Image">
+                <div class="cart-details">
+                    <h3>Another Product</h3>
+                    <p>Price: </p>
+                    <p>Quantity: </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: </h3>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+
+        <p class="empty-cart" style="display: none;">Your cart is empty. <a href="products.html">Shop Now</a></p>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Havenarym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Cart Page Styles */
+        .cart-section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 50px 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .cart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .cart-details {
+            text-align: left;
+        }
+
+        .cart-summary {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .empty-cart {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #311E0F;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #573A26;
+        }
+    </style>
+
+</body>
+</html>
